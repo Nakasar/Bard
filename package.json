@@ -1,0 +1,22 @@
+{
+  "name": "bard",
+  "version": "1.0.0",
+  "description": "Music bot for discord.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "keywords": [
+    "Discord",
+    "bot",
+    "music"
+  ],
+  "author": "Kevin 'Nakasar' Thizy",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "ffmpeg-binaries": "^4.0.0",
+    "node-opus": "^0.3.0",
+    "ytdl-core": "^0.21.0"
+  }
+}
