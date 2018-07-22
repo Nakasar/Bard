@@ -2,8 +2,11 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 const token = process.env.TOKEN || "";
+const GAPI = process.env.GAPI || "";
 
 const connectionManager = require('./ConnectionsManager');
+
+const Axios = require('axios');
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -29,11 +32,87 @@ client.on('message', async msg => {
   switch (args[0]) {
     case "aide":
     case "help":
-      msg.channel.send({ embed: {
-        title: "Bard ♫ Aide",
-        description: makeHelp(),
-        color: 45000
-      }});
+      msg.channel.send({
+        embed: {
+          title: "Bard ♫ Aide",
+          description: makeHelp(),
+          color: 45000
+        }
+      });
+      break;
+    case "search":
+    case "rechercher":
+    case "cherche":
+      const search = args.slice(1, ).join(" ");
+      if (search.length === 0) {
+        msg.reply("Je n'ai pas compris ce que je devais rechercher. Essayez `bard cherche <Nom de la Video>`");
+      }
+
+      Axios({
+        method: "GET",
+        url: "https://www.googleapis.com/youtube/v3/search",
+        params: {
+          part: "snippet",
+          type: "video",
+          key: GAPI,
+          q: search
+        }
+      }).then(res => {
+        const items = res.data.items;
+        if (items.length === 0) {
+          msg.reply("Je n'ai rien trouvé pour cette recherche.");
+          return;
+        }
+
+        const videos = items.slice(0, 10).map(value => {
+          return {
+            title: value.snippet.title,
+            id: value.id.videoId,
+            channel: value.snippet.channelTitle,
+            thumb: value.snippet.thumbnails.default.url
+          }
+        });
+
+        let fields = videos.map((value, index) => {
+          return {
+            name: `${index} - ${value.title}`,
+            value: `Par ${value.channel}.`,
+          }
+        });
+
+        msg.channel.send({
+          embed: {
+            title: "Recherche sur Youtube",
+            description: `Vous avez recherché : \`${search}\`. Entrez le numéro dans la liste pour ajouter la musique à la file de lecture.`,
+            color: 45000,
+            fields
+          }
+        }).then(() => {
+          msg.channel.awaitMessages(
+            response => !isNaN(response) && response >= 0 && response < videos.length,
+            { maxMatches: 1, time: 30000, errors: ['time'] }
+          )
+            .then(collected => {
+              const video = videos[collected.first().content];
+              msg.channel.send("OK, jouons donc la video " + video.title);
+              connectionManager.play(msg.guild.id, `https://www.youtube.com/watch?v=${video.id}`).then(() => {
+                msg.reply("C'est parti ♫");
+              }).catch(err => {
+                if (err.id && err.id === "NOT_CONNECTED") {
+                  msg.reply("Je ne suis pas connecté à un canal vocal. Tapez `bard join`.");
+                  return;
+                }
+                msg.reply("Oups :(");
+                console.error(err);
+              });
+            }).catch(collected => {
+              msg.channel.send("Aucune vidéo selectionnée.");
+            });
+        });
+      }).catch(err => {
+        console.error(err);
+        msg.reply("Je n'ai pas pu récupérer les informations de Youtube.");
+      });
       break;
     case "play":
       const url = args[1];
@@ -44,7 +123,7 @@ client.on('message', async msg => {
       connectionManager.play(msg.guild.id, url).then(() => {
         msg.reply("C'est parti ♫");
       }).catch(err => {
-        if (err.id && err.id === "NOT_CONNECTED" ) {
+        if (err.id && err.id === "NOT_CONNECTED") {
           msg.reply("Je ne suis pas connecté à un canal vocal. Tapez `bard join`.");
           return;
         }
@@ -61,7 +140,7 @@ client.on('message', async msg => {
       connectionManager.setVolume(msg.guild.id, volume).then(() => {
         msg.reply(`Volume à ${volume}%.`);
       }).catch(err => {
-        if (err.id && err.id === "NO_PLAY" ) {
+        if (err.id && err.id === "NO_PLAY") {
           msg.reply("Je ne suis pas en train de jouer. Tapez `bard play <url>`.");
           return;
         }
@@ -77,7 +156,7 @@ client.on('message', async msg => {
       connectionManager.pause(msg.guild.id).then(() => {
         msg.reply("Musique en pause. Tapez `bard reprise` pour que la fête revienne !");
       }).catch(err => {
-        if (err.id && err.id === "NO_PLAY" ) {
+        if (err.id && err.id === "NO_PLAY") {
           msg.reply("Je ne suis pas en train de jouer. Tapez `bard play <url>`.");
           return;
         }
@@ -90,7 +169,7 @@ client.on('message', async msg => {
       connectionManager.resume(msg.guild.id).then(() => {
         msg.reply("Et c'est reparti ♫");
       }).catch(err => {
-        if (err.id && err.id === "NO_PLAY" ) {
+        if (err.id && err.id === "NO_PLAY") {
           msg.reply("Je n'ai aucune musique en pause. Tapez `bard play <url>`.");
           return;
         }
@@ -102,7 +181,7 @@ client.on('message', async msg => {
       connectionManager.stop(msg.guild.id).then(() => {
         msg.reply("Musique annulée, on joue autre chose ?");
       }).catch(err => {
-        if (err.id && err.id === "NO_PLAY" ) {
+        if (err.id && err.id === "NO_PLAY") {
           msg.reply("Je ne suis pas en train de jouer. Tapez `bard play <url>`.");
           return;
         }
