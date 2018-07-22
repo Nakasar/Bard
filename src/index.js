@@ -94,7 +94,9 @@ client.on('message', async msg => {
           )
             .then(collected => {
               const video = videos[collected.first().content];
+
               msg.channel.send("OK, jouons donc la video " + video.title);
+
               connectionManager.play(msg.guild.id, `https://www.youtube.com/watch?v=${video.id}`).then(() => {
                 msg.reply("C'est parti ♫");
               }).catch(err => {
@@ -102,6 +104,7 @@ client.on('message', async msg => {
                   msg.reply("Je ne suis pas connecté à un canal vocal. Tapez `bard join`.");
                   return;
                 }
+                
                 msg.reply("Oups :(");
                 console.error(err);
               });
