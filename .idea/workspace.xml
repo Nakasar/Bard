@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d942fb-e0ca-4326-b890-5e6fdce866d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="54d942fb-e0ca-4326-b890-5e6fdce866d3" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -15,73 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="157" column="9" selection-start-line="157" selection-start-column="9" selection-end-line="157" selection-end-column="9" />
-              <folding>
-                <element signature="e#272#397#0" />
-                <element signature="e#482#499#0" />
-                <element signature="e#699#876#0" />
-                <element signature="e#735#861#0" />
-                <element signature="e#752#853#0" />
-                <element signature="e#923#3469#0" />
-                <element signature="e#1018#1139#0" />
-                <element signature="e#1153#1367#0" />
-                <element signature="e#1255#1359#0" />
-                <element signature="e#1381#3326#0" />
-                <element signature="e#1453#1548#0" />
-                <element signature="e#1605#1826#0" />
-                <element signature="e#1624#1816#0" />
-                <element signature="e#1880#2013#0" />
-                <element signature="e#1899#2003#0" />
-                <element signature="e#2042#2315#0" />
-                <element signature="e#2061#2305#0" />
-                <element signature="e#2328#3316#0" />
-                <element signature="e#2558#3206#0" />
-                <element signature="e#2809#2870#0" />
-                <element signature="e#2885#3190#0" />
-                <element signature="e#2945#3083#0" />
-                <element signature="e#3227#3304#0" />
-                <element signature="e#3341#3454#0" />
-                <element signature="e#3474#3983#0" />
-                <element signature="e#3530#3616#0" />
-                <element signature="e#3676#3721#0" />
-                <element signature="e#3736#3968#0" />
-                <element signature="e#3788#3902#0" />
-                <element signature="e#4484#4602#0" />
-                <element signature="e#4686#5105#0" />
-                <element signature="e#4755#4853#0" />
-                <element signature="e#4868#5090#0" />
-                <element signature="e#4914#5026#0" />
-                <element signature="e#5130#5502#0" />
-                <element signature="e#5201#5251#0" />
-                <element signature="e#5266#5487#0" />
-                <element signature="e#5312#5423#0" />
-                <element signature="e#5507#5896#0" />
-                <element signature="e#5574#5644#0" />
-                <element signature="e#5659#5881#0" />
-                <element signature="e#5705#5817#0" />
-                <element signature="e#5901#6196#0" />
-                <element signature="e#6395#6420#0" />
-                <element signature="n#!!block;n#makeHelp#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ConnectionsManager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -147,10 +78,7 @@
         <script value="start" />
       </scripts>
       <node-interpreter value="project" />
-      <envs>
-        <env name="TOKEN" value="NTU2NDgzMjEyMTA5Njc2NTc1.D26qig._5I2L4kFnaMfdumVYm5BLOaO0xc" />
-        <env name="GAPI" value="AIzaSyALAyEn6qO30jXkxUSPHi-t7FO6KGV9VmU" />
-      </envs>
+      <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -170,16 +98,15 @@
       <option name="presentableId" value="Default" />
       <updated>1552746119320</updated>
       <workItem from="1552746121905" duration="764000" />
-      <workItem from="1552747209525" duration="1977000" />
+      <workItem from="1552747209525" duration="2157000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2741000" />
+    <option name="totallyTimeSpent" value="2921000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49690402" visible="true" weight="0.24954791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -231,8 +158,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ConnectionsManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        <state relative-caret-position="235">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
