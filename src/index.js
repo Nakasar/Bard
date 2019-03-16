@@ -152,8 +152,8 @@ client.on('message', async msg => {
       connectionManager.setVolume(msg.guild.id, volume).then(() => {
         msg.reply(`Volume à ${volume}%.`);
       }).catch(err => {
-        if (err.id && err.id === "NO_PLAY") {
-          msg.reply("Je ne suis pas en train de jouer. Tapez `bard play <url>`.");
+        if (err.id && err.id === "NO_JOIN") {
+          msg.reply("Je ne suis pas connecté. Tapez `bard join`.");
           return;
         }
         if (err.id && err.id === "NO_VOLUME") {
