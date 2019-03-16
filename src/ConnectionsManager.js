@@ -7,6 +7,7 @@ class ConnectionManager {
     }
 
     addConnection(connection) {
+        connection.volume = 1;
         this.connections.set(connection.channel.guild.id, connection);
     }
 
@@ -25,21 +26,38 @@ class ConnectionManager {
             }
             
             const dispatcher = c.playStream(ytdl(url, { filter: 'audioonly' }));
+            dispatcher.setVolume(c.volume);
             this.dispatchers.set(server, dispatcher);
         });
+    }
+
+    async getVolume(server) {
+        const connection = this.connections.get(server);
+        if (!connection) {
+            throw {message : "No connection found.", id: "NO_JOIN" };
+        }
+
+        return parseInt(connection.volume * 100);
     }
 
     setVolume(server, volume) {
         return Promise.resolve().then(() => {
             if (!volume || isNaN(volume) || volume < 0 || volume > 100) {
                 throw { message: "No valid volume provided 0-100.", id: "NO_VOLUME" };
-            }        
-            const dispatcher = this.dispatchers.get(server);
-            if (!dispatcher) {
-                throw {message : "No dispatcher found.", id: "NO_PLAY" };
             }
 
-            dispatcher.setVolume(volume/100);
+            const connection = this.connections.get(server);
+            if (!connection) {
+                throw {message : "No connection found.", id: "NO_JOIN" };
+            }
+
+            connection.volume = volume/100;
+
+            const dispatcher = this.dispatchers.get(server);
+            if (dispatcher) {
+                dispatcher.setVolume(volume/100);
+            }
+
             return true;
         });
     }

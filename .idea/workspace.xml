@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="54d942fb-e0ca-4326-b890-5e6fdce866d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/local.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConnectionsManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConnectionsManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="143" column="69" lean-forward="true" selection-start-line="143" selection-start-column="69" selection-end-line="143" selection-end-column="69" />
+              <folding>
+                <element signature="e#272#397#0" />
+                <element signature="e#482#499#0" />
+                <element signature="e#699#876#0" />
+                <element signature="e#735#861#0" />
+                <element signature="e#752#853#0" />
+                <element signature="e#923#3469#0" />
+                <element signature="e#1018#1139#0" />
+                <element signature="e#1153#1367#0" />
+                <element signature="e#1255#1359#0" />
+                <element signature="e#1381#3326#0" />
+                <element signature="e#1453#1548#0" />
+                <element signature="e#1605#1826#0" />
+                <element signature="e#1624#1816#0" />
+                <element signature="e#1880#2013#0" />
+                <element signature="e#1899#2003#0" />
+                <element signature="e#2042#2315#0" />
+                <element signature="e#2061#2305#0" />
+                <element signature="e#2328#3316#0" />
+                <element signature="e#2558#3206#0" />
+                <element signature="e#2809#2870#0" />
+                <element signature="e#2885#3190#0" />
+                <element signature="e#2945#3083#0" />
+                <element signature="e#3227#3304#0" />
+                <element signature="e#3341#3454#0" />
+                <element signature="e#3474#3983#0" />
+                <element signature="e#3530#3616#0" />
+                <element signature="e#3676#3721#0" />
+                <element signature="e#3736#3968#0" />
+                <element signature="e#3788#3902#0" />
+                <element signature="e#4279#4666#0" />
+                <element signature="e#4325#4437#0" />
+                <element signature="e#4484#4602#0" />
+                <element signature="e#4686#5105#0" />
+                <element signature="e#4755#4853#0" />
+                <element signature="e#4868#5090#0" />
+                <element signature="e#4914#5026#0" />
+                <element signature="e#5130#5502#0" />
+                <element signature="e#5201#5251#0" />
+                <element signature="e#5266#5487#0" />
+                <element signature="e#5312#5423#0" />
+                <element signature="e#5507#5896#0" />
+                <element signature="e#5574#5644#0" />
+                <element signature="e#5659#5881#0" />
+                <element signature="e#5705#5817#0" />
+                <element signature="e#5901#6196#0" />
+                <element signature="e#6395#6420#0" />
+                <element signature="n#!!block;n#makeHelp#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ConnectionsManager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1155">
+              <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/local.json" />
+        <option value="$PROJECT_DIR$/src/ConnectionsManager.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Bard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bard" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs>
+        <env name="TOKEN" value="NTU2NDgzMjEyMTA5Njc2NTc1.D26ZCw.BIQDkX7jYaspEeh-c4L3eDOHJUI" />
+        <env name="GAPI" value="AIzaSyBOSaHF3OsTqGcIAM7-WTAJ5e2UMmlNuvY" />
+      </envs>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="54d942fb-e0ca-4326-b890-5e6fdce866d3" name="Default Changelist" comment="" />
+      <created>1552746119320</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552746119320</updated>
+      <workItem from="1552746121905" duration="764000" />
+      <workItem from="1552747209525" duration="1691000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2455000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49690402" visible="true" weight="0.24954791" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" sideWeight="0.503096" side_tool="true" visible="true" weight="0.24954791" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32987553" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32987553" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConnectionsManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="143" column="69" lean-forward="true" selection-start-line="143" selection-start-column="69" selection-end-line="143" selection-end-column="69" />
+          <folding>
+            <element signature="e#272#397#0" />
+            <element signature="e#482#499#0" />
+            <element signature="e#699#876#0" />
+            <element signature="e#735#861#0" />
+            <element signature="e#752#853#0" />
+            <element signature="e#923#3469#0" />
+            <element signature="e#1018#1139#0" />
+            <element signature="e#1153#1367#0" />
+            <element signature="e#1255#1359#0" />
+            <element signature="e#1381#3326#0" />
+            <element signature="e#1453#1548#0" />
+            <element signature="e#1605#1826#0" />
+            <element signature="e#1624#1816#0" />
+            <element signature="e#1880#2013#0" />
+            <element signature="e#1899#2003#0" />
+            <element signature="e#2042#2315#0" />
+            <element signature="e#2061#2305#0" />
+            <element signature="e#2328#3316#0" />
+            <element signature="e#2558#3206#0" />
+            <element signature="e#2809#2870#0" />
+            <element signature="e#2885#3190#0" />
+            <element signature="e#2945#3083#0" />
+            <element signature="e#3227#3304#0" />
+            <element signature="e#3341#3454#0" />
+            <element signature="e#3474#3983#0" />
+            <element signature="e#3530#3616#0" />
+            <element signature="e#3676#3721#0" />
+            <element signature="e#3736#3968#0" />
+            <element signature="e#3788#3902#0" />
+            <element signature="e#4279#4666#0" />
+            <element signature="e#4325#4437#0" />
+            <element signature="e#4484#4602#0" />
+            <element signature="e#4686#5105#0" />
+            <element signature="e#4755#4853#0" />
+            <element signature="e#4868#5090#0" />
+            <element signature="e#4914#5026#0" />
+            <element signature="e#5130#5502#0" />
+            <element signature="e#5201#5251#0" />
+            <element signature="e#5266#5487#0" />
+            <element signature="e#5312#5423#0" />
+            <element signature="e#5507#5896#0" />
+            <element signature="e#5574#5644#0" />
+            <element signature="e#5659#5881#0" />
+            <element signature="e#5705#5817#0" />
+            <element signature="e#5901#6196#0" />
+            <element signature="e#6395#6420#0" />
+            <element signature="n#!!block;n#makeHelp#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

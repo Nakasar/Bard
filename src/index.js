@@ -137,7 +137,16 @@ client.on('message', async msg => {
     case 'volume':
       const volume = args[1];
       if (!volume) {
-        msg.reply("J'attends un volume : `bard volume <0-100>`.");
+        connectionManager.getVolume(msg.guild.id).then(volume => {
+          msg.reply(`J'attends un volume : \`bard volume <0-100>\`.\nLe volume actuel est de ${volume}%`);
+        }).catch(err => {
+          if (err.id && err.id === "NO_JOIN") {
+            msg.reply("Je ne suis pas connecté. Tapez `bard join`.");
+            return;
+          }
+          msg.reply("Oups :(");
+          console.log(err);
+        });
         return;
       }
       connectionManager.setVolume(msg.guild.id, volume).then(() => {
@@ -207,6 +216,10 @@ client.on('message', async msg => {
       connectionManager.removeConnection(msg.guild.id);
       break;
   }
+});
+
+client.on('error', err => {
+  console.error(err);
 });
 
 client.login(token);
