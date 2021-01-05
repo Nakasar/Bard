@@ -14,7 +14,7 @@
   "author": "Kevin 'Nakasar' Thizy",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "discord.js": "^11.3.2",
     "ffmpeg-binaries": "^4.0.0",
     "node-opus": "^0.3.0",
