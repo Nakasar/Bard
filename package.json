@@ -1,23 +1,33 @@
 {
-  "name": "bard",
-  "version": "1.0.0",
-  "description": "Music bot for discord.",
-  "main": "index.js",
+  "name": "@nakasar/bard",
+  "private": true,
+  "version": "2.0.0",
+  "description": "A discord music bot for rolistic usage.",
+  "main": "server.js",
   "scripts": {
-    "start": "node ./src/index.js"
+    "start": "node server.js"
   },
-  "keywords": [
-    "Discord",
-    "bot",
-    "music"
-  ],
-  "author": "Kevin 'Nakasar' Thizy",
-  "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0",
-    "discord.js": "^11.3.2",
-    "ffmpeg-binaries": "^4.0.0",
-    "node-opus": "^0.3.0",
-    "ytdl-core": "^0.21.0"
-  }
+    "ytdl-core": "^4.10.0",
+    "@discordjs/opus": "^0.7.0",
+    "@discordjs/voice": "^0.7.5",
+    "@discordjs/rest": "^0.1.1-canary.0",
+    "discord-api-types": "^0.26.1",
+    "@discordjs/builders": "^0.11.0",
+    "discord.js": "^13.6.0",
+    "koa": "^2.13.4",
+    "sodium": "^3.0.2",
+    "play-dl": "^1.8.1",
+    "googleapis": "^92.0.0"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "repository": {
+    "url": "https://github.com/Nakasar/Bard"
+  },
+  "license": "MIT",
+  "keywords": [
+    "music", "discord", "bot"
+  ]
 }
