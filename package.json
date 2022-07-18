@@ -1,7 +1,7 @@
 {
   "name": "@nakasar/bard",
   "private": true,
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A discord music bot for rolistic usage.",
   "main": "server.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "discord.js": "^13.6.0",
     "koa": "^2.13.4",
     "sodium": "^3.0.2",
-    "play-dl": "^1.8.1",
+    "play-dl": "^1.8.9",
     "googleapis": "^92.0.0"
   },
   "engines": {
